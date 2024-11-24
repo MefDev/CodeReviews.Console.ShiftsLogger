@@ -1,18 +1,13 @@
 ﻿using System.Globalization;
 using Spectre.Console;
 
-namespace ShiftLogger.Mefdev.ShiftLoggerUI.Inputs;
+namespace ShiftLogger.Mefdev.ShiftLoggerUi.Inputs;
 
 public class UserInput
 {
-    public UserInput()
+    public int GetId()
     {
-
-    }
-
-    public string GetId()
-    {
-        return AnsiConsole
+        return int.Parse(AnsiConsole
         .Prompt(new TextPrompt<string>("Enter a id: ")
         .Validate(id =>
         {
@@ -23,9 +18,9 @@ public class UserInput
                 return ValidationResult.Error("[red]ID can only contain numbers![/]");
 
             return ValidationResult.Success();
-        }));
+        })));
     }
-    public  string GetName(string oldName="")
+    public string GetName(string oldName="")
     {
         return AnsiConsole
         .Prompt(new TextPrompt<string>($"Enter a name ({oldName}): ")

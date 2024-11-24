@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiftLoggerAPI", "ShiftLoggerAPI\ShiftLoggerAPI.csproj", "{E8AEA6D3-8A7F-43F0-947F-C15471255D86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiftLoggerApi", "ShiftLoggerApi\ShiftLoggerApi.csproj", "{E8AEA6D3-8A7F-43F0-947F-C15471255D86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiftLoggerUI", "ShiftLoggerUI\ShiftLoggerUI.csproj", "{53CD004B-738E-4E96-B10D-DC66C45C7A1B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiftLoggerUi", "ShiftLoggerUI\ShiftLoggerUi.csproj", "{53CD004B-738E-4E96-B10D-DC66C45C7A1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

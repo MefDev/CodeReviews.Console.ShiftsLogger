@@ -1,9 +1,9 @@
-﻿using ShiftLogger.Mefdev.ShiftLoggerUI.Dtos;
-using ShiftLogger.Mefdev.ShiftLoggerUI.Inputs;
-using ShiftLogger.Mefdev.ShiftLoggerUI.Services;
+﻿using ShiftLogger.Mefdev.ShiftLoggerUi.Dtos;
+using ShiftLogger.Mefdev.ShiftLoggerUi.Inputs;
+using ShiftLogger.Mefdev.ShiftLoggerUi.Services;
 using Spectre.Console;
 
-namespace ShiftLogger.Mefdev.ShiftLoggerUI.Controllers;
+namespace ShiftLogger.Mefdev.ShiftLoggerUi.Controllers;
 
 public class WorkerShiftController: WorkerShiftBase
 {
@@ -18,7 +18,7 @@ public class WorkerShiftController: WorkerShiftBase
 
     public async Task CreateShift()
     {
-        int id = int.Parse(_userInput.GetId());
+        int id = _userInput.GetId();
         var oldWorkerShift = await _manageShift.GetWorkerShift(id);
         if (oldWorkerShift is not null)
         {
@@ -52,7 +52,7 @@ public class WorkerShiftController: WorkerShiftBase
 
     public async Task GetShift()
     {
-        int id = int.Parse(_userInput.GetId());
+        int id = _userInput.GetId();
         var workerShift = await _manageShift.GetWorkerShift(id);
         if (workerShift is null)
         {
@@ -65,7 +65,7 @@ public class WorkerShiftController: WorkerShiftBase
 
     public async Task DeleteShift()
     {
-        int id = int.Parse(_userInput.GetId());
+        int id = _userInput.GetId();
         var isDeleted = await _manageShift.DeleteWorkerShift(id);
         if(!isDeleted)
         {
@@ -79,7 +79,7 @@ public class WorkerShiftController: WorkerShiftBase
 
     public async Task UpdateShift()
     {
-        int id = int.Parse(_userInput.GetId());
+        int id = _userInput.GetId();
         var oldWorkerShift = await _manageShift.GetWorkerShift(id);
         if (oldWorkerShift is null)
         {

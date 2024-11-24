@@ -18,7 +18,7 @@ The UI Application offers a user-friendly interface for managing work shifts.
     ```
 2. **Navigate to the UI Directory:**
     ```bash
-    cd ShiftLogger.Mefdev/ShiftLoggerUI
+    cd ShiftLogger.Mefdev/ShiftLoggerUi
     ```
    ```dotnet
     dotnet run
@@ -39,7 +39,7 @@ The API Application serves as the backend for ShiftLogger, handling data storage
     ```
 2. **Navigate to the API Directory:**
     ```bash
-    cd ShiftsLogger.Mefdev/ShiftLoggerAPI
+    cd ShiftsLogger.Mefdev/ShiftLoggerApi
     ```
 3. **Install Dependencies:**
     ```bash

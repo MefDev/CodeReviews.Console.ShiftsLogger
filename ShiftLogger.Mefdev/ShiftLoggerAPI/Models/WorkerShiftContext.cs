@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace ShiftLogger.Mefdev.ShiftLoggerAPI.Models;
+namespace ShiftLogger.Mefdev.ShiftLoggerApi.Models;
 
 public class WorkerShiftContext : DbContext
 {

@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using ShiftLogger.Mefdev.ShiftLoggerUI;
-using ShiftLogger.Mefdev.ShiftLoggerUI.Inputs;
-using ShiftLogger.Mefdev.ShiftLoggerUI.Services;
-using ShiftLogger.Mefdev.ShiftLoggerUI.Controllers;
+using ShiftLogger.Mefdev.ShiftLoggerUi;
+using ShiftLogger.Mefdev.ShiftLoggerUi.Inputs;
+using ShiftLogger.Mefdev.ShiftLoggerUi.Services;
+using ShiftLogger.Mefdev.ShiftLoggerUi.Controllers;
 
 var serviceProvider = new ServiceCollection()
                .AddScoped<ManageShifts>() 

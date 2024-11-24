@@ -1,5 +1,5 @@
 ﻿using System;
-namespace ShiftLogger.Mefdev.ShiftLoggerUI.Models
+namespace ShiftLogger.Mefdev.ShiftLoggerUi.Models
 {
 	public static class Options
 	{

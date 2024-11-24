@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using ShiftLogger.Mefdev.ShiftLoggerAPI.Models;
-using ShiftLogger.Mefdev.ShiftLoggerAPI.Services;
+using ShiftLogger.Mefdev.ShiftLoggerApi.Models;
+using ShiftLogger.Mefdev.ShiftLoggerApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +14,6 @@ builder.Services.AddDbContext<WorkerShiftContext>(opt=> opt.UseSqlServer(builder
 
 // IOC
 builder.Services.AddScoped<WorkerShiftService>();
-builder.Services.AddScoped<WorkerShiftMapper>();
 
 
 var app = builder.Build();

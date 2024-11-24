@@ -5,15 +5,15 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ShiftLogger.Mefdev.ShiftLoggerAPI.Models;
+using ShiftLogger.Mefdev.ShiftLoggerApi.Models;
 
 #nullable disable
 
-namespace ShiftLoggerAPI.Migrations
+namespace ShiftLoggerApi.Migrations
 {
     [DbContext(typeof(WorkerShiftContext))]
-    [Migration("20241117185204_intialCreate")]
-    partial class intialCreate
+    [Migration("20241124212456_IntialCreate")]
+    partial class IntialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace ShiftLoggerAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ShiftLogger.Mefdev.ShiftLoggerAPI.Models.WorkerShift", b =>
+            modelBuilder.Entity("ShiftLogger.Mefdev.ShiftLoggerApi.Models.WorkerShift", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

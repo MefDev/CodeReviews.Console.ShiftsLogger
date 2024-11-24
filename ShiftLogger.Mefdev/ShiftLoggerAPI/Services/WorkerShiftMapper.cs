@@ -1,13 +1,13 @@
-using ShiftLogger.Mefdev.ShiftLoggerAPI.Models;
+using ShiftLogger.Mefdev.ShiftLoggerApi.Models;
 
-namespace ShiftLogger.Mefdev.ShiftLoggerAPI.Services;
+namespace ShiftLogger.Mefdev.ShiftLoggerApi.Services;
 
-public class WorkerShiftMapper
+public static class WorkerShiftMapper
 {
-    public WorkerShiftDto ShiftToDTO(WorkerShift shift) 
+    public static WorkerShiftDto ShiftToDTO(WorkerShift shift) 
             =>  new WorkerShiftDto(shift.Id,shift.EmployeeName, shift.StartDate, shift.EndDate, CalculateShiftDuration(shift.StartDate, shift.EndDate));
                 
-    public List<WorkerShiftDto> ShiftsToDTO(List<WorkerShift> shifts)
+    public static List<WorkerShiftDto> ShiftsToDTO(List<WorkerShift> shifts)
     {
         List<WorkerShiftDto> workerShiftDtos = new List<WorkerShiftDto>();
         if(shifts is null)
@@ -22,10 +22,10 @@ public class WorkerShiftMapper
         return workerShiftDtos;  
     }
 
-    public WorkerShift DTOtoShift(WorkerShiftDto shift)
+    public static WorkerShift DTOtoShift(WorkerShiftDto shift)
             => new WorkerShift() { Id=shift.Id, EmployeeName=shift.Name, StartDate=shift.Start, EndDate=shift.End};
 
-    private TimeSpan CalculateShiftDuration(DateTime start, DateTime end)
+    private static TimeSpan CalculateShiftDuration(DateTime start, DateTime end)
     {
         if (end >= start)
         {

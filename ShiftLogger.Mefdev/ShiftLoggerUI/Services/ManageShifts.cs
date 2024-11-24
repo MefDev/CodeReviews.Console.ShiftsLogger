@@ -1,8 +1,8 @@
 using RestSharp;
 using Spectre.Console;
-using ShiftLogger.Mefdev.ShiftLoggerUI.Dtos;
+using ShiftLogger.Mefdev.ShiftLoggerUi.Dtos;
 
-namespace ShiftLogger.Mefdev.ShiftLoggerUI.Services;
+namespace ShiftLogger.Mefdev.ShiftLoggerUi.Services;
 
 public class ManageShifts
 {

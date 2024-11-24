@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace ShiftLoggerAPI.Migrations
+namespace ShiftLoggerApi.Migrations
 {
     /// <inheritdoc />
-    public partial class intialCreate : Migration
+    public partial class IntialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

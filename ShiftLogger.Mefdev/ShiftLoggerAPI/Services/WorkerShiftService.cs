@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using ShiftLogger.Mefdev.ShiftLoggerAPI.Models;
+using ShiftLogger.Mefdev.ShiftLoggerApi.Models;
 
-namespace ShiftLogger.Mefdev.ShiftLoggerAPI.Services;
+namespace ShiftLogger.Mefdev.ShiftLoggerApi.Services;
 
 public class WorkerShiftService
 {

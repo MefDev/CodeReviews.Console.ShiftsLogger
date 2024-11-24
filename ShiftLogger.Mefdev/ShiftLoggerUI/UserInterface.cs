@@ -1,8 +1,8 @@
 ﻿using Spectre.Console;
-using ShiftLogger.Mefdev.ShiftLoggerUI.Models;
-using ShiftLogger.Mefdev.ShiftLoggerUI.Controllers;
+using ShiftLogger.Mefdev.ShiftLoggerUi.Models;
+using ShiftLogger.Mefdev.ShiftLoggerUi.Controllers;
 
-namespace ShiftLogger.Mefdev.ShiftLoggerUI
+namespace ShiftLogger.Mefdev.ShiftLoggerUi
 {
     public class UserInterface : WorkerShiftBase
     {
